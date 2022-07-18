@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day1_하이퍼링크</title>
+</head>
+<body>
+    <!--실행 URL확인 :  file:///C:/a.GookBe/frontend/day01/2%ED%95%98%EC%9D%B4%ED%8D%BC%EB%A7%81%ED%81%AC.html
+        - 지금 우리 소스는 파일열기로 브라우저에서 실행. http또는 https 프로토콜이 아님. file:///로 시작함
+          파일명이 한글일떄는 utf-8 인코딩으로 변환되어서 보임
+    -->
+    <!-- a(anchor) : 하이퍼링크 기능 태그 (인라인요소)-->
+    <!-- href 속성 : 이동할 경로(url or 파일명) 설정 -->
+    <!-- target 속성 : 이동할 웹문서가 보여질 창을 설정함. _blank는 새로운 창으로 보여줌. 기본값은 _Self -->
+    구글로 이동하기 : <a href="https://www.google.com">GOOGLE구글</a><BR>
+    네이버로 이동하기 : <a href="https://www.naver.com">NAVER 네이버</a><BR>
+    잘못된 주소 테스트 : <a href="www.navr">없는 URL</a><BR>
+    같은 경로의 파일로 이동하기 : <a href="1start.html" target="_blank">1start.html</a><br>
+    <!-- 1)같은 파일경로는 그대로 파일명만 변경 -->
+
+    <!-- 파일명을 지정할때 상대경로에 대한 내용 테스트하기 
+        상대경로 : 현재를 기준으로 1) 같은 위치 ? 파일명만 작성하면 됨
+         2) 하위폴더 ?   하위폴더명/파일명
+         3) 상위폴더 ?   ../파일명
+         4) 형재폴더 ?  ../형제파일명/파일명                            -->
+    
+    상위폴더 파일로 링크 : <a href="../test0.html">test0.html</a><br>
+    형제폴더 파일로 링크 : <a href="../sibling/test1.html">test1.html</a><br>
+
+</body>
+</html>
