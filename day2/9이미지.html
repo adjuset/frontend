@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day2_이미지</title>
+</head>
+<body>
+    <!-- img 이미지 태그 : 인라인 요소. 
+        src 속성값에 이미지 위치 설정 ( url주소 or 로컬위치의 파일 )
+        이미지 파일 위치 지정할 떄 상대경로와 절대경로 모두 가능      
+        파일위치와 파일명이 정확하지 않으면 이미지가 표시가 안됨  -->
+        <img src="고양이1.jpg" alt="cat1">
+        <img src="../이미지/강아지.jpg" alt="dog1">
+        <!-- 파일위치와 파일명이 정확하지 않으면 이미지 표시 안됨.  alt속성을 보여줌 -->
+        <img src="마을.jsp" alt="contry">
+        <hr>
+
+        <!-- 이미지크기 너비만 설정 (가로 세로 비율유지) , 높이 height  -->
+        <img src="고양이1.jpg" alt="cat1" style="width:100px ;">
+        <img src="../이미지/강아지.jpg" alt="dog1" style="width: 100px;">
+        <a href="http://www.spiderman.com" target="_blank">
+            <img src="../이미지/강아지.jpg" alt="강아지" style="width:100px ;">
+        </a>
+        <hr>
+
+        <!-- 높이 height까지 설정하면 가로세로 비율은 유지가 안될수도 있음 -->
+        <img src="고양이1.jpg" alt="cat1" style="width:100px ; height:100px ;">
+        <img src="../이미지/강아지.jpg" alt="dog1" style="width: 100px; height: 100px;">
+        <hr>
+</body>
+</html>

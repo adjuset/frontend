@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Day2_표4</title>
+    <style>
+        th,td{
+            border: 1px solid gray;
+            font-size: 1.1em;   /*  1.1배 */
+        }
+        table{
+            width: 400px;
+        }
+
+        /*  자식요소 tr중 1번째 찾아서 그것의 자식 td요소 선택 
+            자식요소 선택자 기호는  >                            */
+        tr:nth-child(1)>td{
+            width: 100px;
+            background-color: crimson;
+        }
+
+        /* 3번쨰 table애서 자손 td요소 선택 
+           - 자손요소 선택자 요소 : 공백*/
+        table:nth-child(3) td{
+            background-color: blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td>3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>10</td>
+            <td>11</td>
+            <td>12</td>
+        </tr>
+
+    </table>
+
+    <!-- 옆에있는 칸과 합치기 :colspan  , 아래 칸과 합침:rowspan -->
+    <!-- 칸이 총 8개 있어야함 -->
+    <table class="table1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+            <td rowspan="2">6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td colspan="2">8</td>
+        </tr>
+    </table>
+
+    <table class="table1">
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="2">5</td>
+            <td rowspan="2">6</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td colspan="2">8</td>
+        </tr>
+    </table>
+</body>
+</html>
