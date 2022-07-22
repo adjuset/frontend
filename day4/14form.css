@@ -1,0 +1,50 @@
+.header{
+    background-color: thistle;
+    padding: 40px 20px ;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+ul{
+    list-style: none;
+    overflow: hidden;
+    background-color:slategrey;
+    margin: auto;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+ul>li{
+    float: left;
+}
+ul>li a{
+    text-decoration: none;
+    display: block;
+    padding: 14px 16px ;
+    color: white;
+}
+ul>li a:hover{
+    background-color: black;
+    color: white;
+}
+
+h3{
+    text-align: center;
+}
+td,th{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th{
+    width: 50%;
+}
+    
+.main{
+    background-color:white;
+    padding-top: 30px;
+    padding-bottom: 200px;
+}
+.footer{
+    background-color:slategrey;
+    color: white;
+    padding: 20px;
+}

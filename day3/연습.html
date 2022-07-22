@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 데이터를 저장(post)하는 동작 
+        value가 한글 또는 기호가 포함될 떄는 UTF-8 인코딩-->
+    <form action="" >
+        <table>
+            <tr>
+                <!-- label 태그는 연관된 텍스트(for)를 클릭하면 입력요소(text, password, select - id속성)가 클릭됨-->
+                <td><label for="lblname">이름</label></td>
+                <td><input type="text" name="name" id="lblname"></td>
+            </tr>
+            <tr>
+                <td><label for="lblpass">패스워드</label></td>
+                <td><input type="password" name="password" id="lblpass"></td>
+            </tr>
+            <tr>
+                <td><labal for>나이</labal></td>
+                <td><input type="number" name="age" value="19" min="15" max="99"></td>
+            </tr>
+            <tr>
+                <td>지역(주소)</td>
+                <td>
+                    <select name="addr">
+                        <!-- value값이 서버로 전달됨 -->
+                        <option value="서울" cheked="checked">서울</option>
+                        <option value="대구">대구</option>
+                        <option value="인천">인천</option>
+                        <option value="광주">광주</option>
+                        <option value="부산">부산</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>성별</td>
+                <td>
+                    <!-- 옵션버튼 여러개중 하나 선택 name이름 같아야됨 -->
+                    <input type="radio" name="gender" value="male">남성
+                    <input type="radio" name="gender" value="female">여성
+                    <input type="radio" name="gender" value="unknown">모름
+                </td>
+            </tr>
+            <tr>
+                <td>취미</td>
+                <td>
+                    <!-- checkbox : 한 번에 여러개 선택가능 -->
+                    <input type="checkbox" name="hoddy" value="축구">축구
+                    <input type="checkbox" name="hoddy" value="농구">농구
+                    <input type="checkbox" name="hoddy" value="달리기">달리기
+                    <input type="checkbox" name="hoddy" value="수영">수영
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <input type="button" value="버튼">
+                    <input type="submit" value="제출">
+                    <input type="reset" value="초기화">
+                    <button>제출2</button>
+                    <!-- input은 type생략하면 text
+                         submit이 서버로 입력데이터를 전송(재출)
+                         button은 기본동작이 submit -->
+                </td>
+            </tr>
+
+        </table>
+    </form> 
+</body>
+</html>

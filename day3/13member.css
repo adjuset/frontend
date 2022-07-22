@@ -19,10 +19,12 @@
     font-family: 'Gamja Flower', cursive;
     font-size: medium;
 }
+
 table{
     border-top: 3px solid gray;
     border-bottom: 3px solid gray ;
 }
+
 td{
     padding: 10px;
 }

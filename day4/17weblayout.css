@@ -1,0 +1,49 @@
+
+.header{
+    background-color: darkcyan;
+    color: white;
+    padding: 40px 20px;
+    margin-left: -10px;
+    margin-top: -10px;
+    margin-right: -10px;
+}
+.nav{
+
+}
+ul{
+    list-style: none;    /*점 안보이게 해줌 */
+    background-color: brown;
+    overflow: hidden;   /* 갈색이 안보였었는데 보임 > 가려져있는거 보이게 함 */
+    margin: auto;       /*nav공백을 없애줌*/
+    margin-left: -10px;
+    margin-right: -10px;
+}
+ul>li{
+    float: left;        /*글씨를 1열로 보여줌*/
+    /* border : 1px solid black */
+}
+/* 위의 border로 영역확인 : nav.ul영역이 li 영역보다 작습니다 */
+ ul>li a{   /*li밑에 있는 모든 a태그 : 원래 인라인요소임  그래서 넓이지정못함*/
+    display: block;
+    text-align: center;
+    padding: 14px 16px ;
+    text-decoration: none;
+    color: white;
+}
+
+/* 클릭하면(hover) 변경되는 요소 */
+ul>li a:hover{
+    background-color: black;
+    color: white;
+}
+
+.main{
+    background-color:azure;
+    padding: 20px;
+    height: 500px;
+}
+.footer{
+    background-color: cadetblue;
+    color: white;
+    padding: 20px;
+}
